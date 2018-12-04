@@ -1,0 +1,33 @@
+{
+  "manifest_version": 2,
+  "name": "Force Reload All",
+  "version": "0.5",
+
+  "applications": {
+    "gecko": {
+      "id": "{a47b326c-eac4-46ae-9c67-54689921de68}"
+    }
+  },
+
+  "description": "Activate and reload all tabs",
+
+  "icons": {
+    "48": "icons/reload.png"
+  },
+  
+  "browser_action": {
+    "default_icon": {
+      "16": "icons/reload.png",
+      "32": "icons/reload.png"
+    }
+  },
+
+  "permissions": [
+    "tabs",
+    "contextMenus"
+  ],
+
+  "background": {
+    "scripts": ["reload.js"]
+  }
+}
